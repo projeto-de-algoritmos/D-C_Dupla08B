@@ -28,6 +28,8 @@ Como não tive tempo para fazer o trabalho, decidi pegar o código da internet(q
 
 O código, presente no arquivo counting.cpp, foi tirado do seguinte link: https://www.geeksforgeeks.org/counting-inversions/
 
+No arquivo counting_inversions.js contém o código, que não consegui terminar, que estava sendo feito com base nos vídeos do professor.
+
 
 
 
