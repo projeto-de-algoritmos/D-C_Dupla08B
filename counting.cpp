@@ -8,8 +8,6 @@
 */
 
 
-
-
 // C++ program to Count
 // Inversions in an array
 // using Merge Sort
@@ -106,6 +104,8 @@ int main()
     cout << "Digite o numero de elementos que terá no array: ";
     cin >> size_array;
     int arr[size_array];
+
+    cout << "Abaixo digite cada elemento do array separados por espaço\n";
     for(int i = 0; i < size_array; ++i) {
         int element;
         cin >> element;
@@ -113,7 +113,7 @@ int main()
     }
     int n = sizeof(arr) / sizeof(arr[0]);
     int ans = mergeSort(arr, n);
-    cout << " Number of inversions are " << ans << endl;
+    cout << "O numero de inversoes eh: " << ans << endl;
     return 0;
 }
  
