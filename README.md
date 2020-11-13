@@ -13,12 +13,17 @@
 ## Instalação 
 **Linguagem**: C++<br>
 
-G++
+É necessário ter o g++ instalado no computador.
+
+É necessário, também, ter o git instalado.
 
 ## Uso 
+
+Clone o repositorio com o comando: $ git clone https://github.com/projeto-de-algoritmos/D-C_Dupla08B <br>
+Navegue até a pasta raiz <br>
 Na pasta raiz rode:
      g++ counting.cpp
-
+<br>
 depois:
     ./a.out
 
