@@ -28,7 +28,7 @@ depois:
     ./a.out
 
 ## Outros 
-Como não tive tempo para fazer o trabalho, decidi pegar o código da internet(que vale II) para não ficar com SR.
+Como não iria conseguir terminar o trabalho a tempo, decidi pegar o código da internet(que vale II) para não ficar com SR.
 
 
 O código, presente no arquivo counting.cpp, foi tirado do seguinte link: https://www.geeksforgeeks.org/counting-inversions/
