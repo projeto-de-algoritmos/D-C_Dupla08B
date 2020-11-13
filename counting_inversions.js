@@ -28,32 +28,35 @@ class CountingInversions {
     merge_and_count(list_a, list_b) {
         let aux = [];
         let inversions = 0;
-        let index_a = list_a.length - 1;
+        let index_a;
         let index_b = 0;
         
-        for(let i = 0; i <= list_a.length && index_b < list_b.length; ++i) {
-            console.log('A index aqui ====> ', i)
-            console.log('B index aqui ====> ', index_b)
-
-            if(i == list_a.length && index_b < list_b.length) {
-                aux.push(list_b[index_b++]);
-                --i;
-            }
+        for(index_a = 0; index_a < list_a.length && index_b < list_b.length; ++index_a) { // tempo linear
            
-            else if(list_a[i] > list_b[index_b]) {
-                console.log(list_a[i] + ' => ' + list_b[index_b])
-                inversions += (list_a.length - i);
+            if(list_a[index_a] > list_b[index_b]) {
+                console.log(list_a[index_a] + ' => ' + list_b[index_b])
+                inversions += (list_a.length - index_a);
                 aux.push(list_b[index_b++]);
                 console.log(inversions);
                 console.log(aux)
-                --i;
+                --index_a;
             }
             else {
-                console.log(list_a[i] + ' => ' + list_b[index_b])
-                aux.push(list_a[i]);
+                console.log(list_a[index_a] + ' => ' + list_b[index_b])
+                aux.push(list_a[index_a]);
                 console.log(aux)
             }
+
+            console.log('a => ' + index_a);
+            console.log('b => ' + index_b);
             
+        }
+
+        for(let i = index_a; i < list_a.length; ++i) { // + tempo linear
+            aux.push(list_a[i]);
+        }
+        for(let i = index_b; i < list_b.length; ++i) { // + tempo linear == O(n + m + o) == O(n)
+            aux.push(list_b[i]);
         }
 
 
